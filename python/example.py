@@ -27,7 +27,6 @@ request.sms_numbers = ["5555551212"]
 headers = {'Authorization': apikey, 'Accept' : 'application/json', 'Content-Type' : 'application/json' }
 
 jsondata = json.dumps(request.__dict__)
-print(jsondata)
 resp = requests.post(url, data=jsondata ,headers=headers)
 
 shortenLinkResponse = json.loads(resp.text)
