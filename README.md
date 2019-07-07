@@ -13,7 +13,9 @@ See folders above for langage specific examples.
 ```
 
 ## Call 
-`curl --header "Authorization: Bearer YOUR_API_KEY"  --header "Content-Type: application/json" --request POST  --data '{"url":"http://really.long.url","sms_numbers":["5555551212"], "sms_message": "please visit {{url}}" }' https://lnki.io/link`
+```
+curl --header "Authorization: Bearer YOUR_API_KEY"  --header "Content-Type: application/json" --request POST  --data '{"url":"http://really.long.url","sms_numbers":["5555551212"], "sms_message": "please visit {{url}}" }' https://lnki.io/link
+```
 
 ## Result
 ```json
